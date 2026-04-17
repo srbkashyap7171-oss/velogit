@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essential Reads — Top 10 Books Everyone Should Read</title>
+<meta name="description" content="Discover the top 10 books everyone should read at least once. Curated lists, reviews, and insights.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dark-mode.css">
+<script defer="" src="js/main.js"></script>
+<style>
+.spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+#verification-modal {
+  background-color: #fff;
+  color: #2c1810;
+  border: 1px solid #333;
+  border-radius: 16px;
+}
+#verification-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.006);
+}
+#verify-btn {
+  background-color: #8b4513;
+  color: #fff;
+  border: none;
+}
+#verify-btn:hover {
+  background-color: #5d2e0c;
+  cursor: pointer;
+}
+body {
+  background: url('images/my\ lap.png') no-repeat center center fixed;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url('images/my\ mob.png');
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="container nav-wrap">
+    <div class="brand">
+      <img src="images/logo.svg" alt="Essential Reads logo" class="logo" style="width:40px;height:auto;">
+      <span class="brand-name">Essential Reads</span>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/icehocky.html">Classics</a></li>
+        <li><a href="pages/mls.html">Modern Hits</a></li>
+        <li class="more">
+          <button class="more-btn" aria-haspopup="true" aria-expanded="false">More</button>
+          <ul class="dropdown">
+            <li><a href="pages/events.html">Literary Events</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/privacy.html">Privacy</a></li>
+            <li><a href="pages/terms.html">Terms</a></li>
+            <li><a href="pages/disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<dialog id="verification-modal" class="modal-dialog">
+  <h2>Welcome Reader</h2>
+  <p>You are being redirected to our partner bookstore. Please review it to continue.</p>
+  <p>We ensure all recommendations are curated for quality and relevance.</p>
+  <button id="verify-btn" class="btn">Enter Library</button>
+  <p id="loading-msg" style="display:none; margin-top:10px;">Please wait while we complete a quick check. <span class="spinner"></span></p>
+</dialog>
+
+</body></html>
